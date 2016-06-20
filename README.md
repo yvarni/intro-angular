@@ -32,3 +32,10 @@ Exercices:
 - Ajouter une partie d'erreur pour notifier l'utilisateur d'un problème de saisie / validation
 
 - Modifier la page d'accueil pour afficher un contenu aléatoire récupérer d'internet via API REST en faisant usage du service `$http`
+
+
+Pour le suivi en live des modifications exécuter les commandes suivantes:
+
+Effacer les changements réalisés en local: `git git reset --hard HEAD`
+ 
+Récupérer les modifications depuis Github `git pull`
