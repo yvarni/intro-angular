@@ -5,3 +5,11 @@
 <button class="btn btn-primary" ng-click="decrement()">
     -
 </button>
+<ul ng-repeat="val in history | orderBy: '-timestamp'">
+    <li>
+        <span class="label" ng-class="{'label-success': val.value > 0, 'label-danger': val.value <= 0}">
+            {{val.timestamp | date: 'short'}} :
+            {{val.value}}
+        </span>
+    </li>
+</ul>
