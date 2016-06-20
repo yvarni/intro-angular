@@ -1,9 +1,9 @@
 Hello les paramètres:
 <p>
-Une valeur de test {{test}}
+Une valeur de test <b>{{variableController}}</b>
 </p>
 <p>
-    <input type="text" ng-model="test">
+    <input type="text" class="form-control" ng-model="variableController" >
 </p>
 
-<button>Hello!</button>
+<button ng-click="alertUpperCase()" class="btn btn-default">Hello!</button>
