@@ -13,8 +13,14 @@ var App = angular.module('intro-angular', ['ui.router'])
                 templateUrl:'../views/home/home.html'
             })
             .state('incrementer', {
+                url: "/incrementer",
                 controller:'IncrementerController',
                 templateUrl:'../views/incrementer/incrementer.html'
+            })
+            .state('params', {
+                url: "/params",
+                controller:'ParamsController',
+                templateUrl:'../views/params/params.html'
             });
     });
 
