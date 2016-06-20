@@ -22,5 +22,13 @@ var App = angular.module('intro-angular', ['ui.router'])
                 controller:'ParamsController',
                 templateUrl:'../views/params/params.html'
             });
+    })
+
+    .service('Settings', function () {
+        this.values = {
+            increment: 1,
+            maxLimit: 200,
+            minLimit: -200
+        };
     });
 
