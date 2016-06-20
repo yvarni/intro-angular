@@ -1,6 +1,6 @@
 
 
-angular.module('intro-angular', ['ui.router'])
+var App = angular.module('intro-angular', ['ui.router'])
 
     .config(function($stateProvider, $urlRouterProvider) {
 
@@ -16,13 +16,5 @@ angular.module('intro-angular', ['ui.router'])
                 controller:'IncrementerController',
                 templateUrl:'../views/incrementer/incrementer.html'
             });
-    })
-
-    .controller('HomeController', function ($scope) {
-        $scope.valeur = "bonjour";
-    })
-
-    .controller('IncrementerController', function($scope) {
-
     });
 
