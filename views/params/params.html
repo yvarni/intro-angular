@@ -1,9 +1,13 @@
-Hello les paramètres:
-<p>
-Une valeur de test <b>{{variableController}}</b>
-</p>
-<p>
-    <input type="text" class="form-control" ng-model="variableController" >
-</p>
-
-<button ng-click="alertUpperCase()" class="btn btn-default">Hello!</button>
+<div class="form-group">
+    <label for="increment">Taille incrément</label>
+    <input type="number" class="form-control" id="increment" ng-model="settings.increment">
+</div>
+<div class="form-group">
+    <label for="maxLimit">Limite maximale</label>
+    <input type="number" class="form-control" id="maxLimit" ng-model="settings.maxLimit">
+</div>
+<div class="form-group">
+    <label for="minLimit">Limite minimale</label>
+    <input type="number" class="form-control" id="minLimit" ng-model="settings.minLimit">
+</div>
+<button class="btn btn-primary" ng-click="save()">Sauvegarder</button>
